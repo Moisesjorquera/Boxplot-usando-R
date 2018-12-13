@@ -1,0 +1,12 @@
+#import(ggplot2)
+#import database en csv
+#attach(poner los datos dentro del software)
+#ls(chequear variables)
+
+ejecutar el algoritmo
+
+v1 <- st[0:4]
+list.values <- unlist(as.list(st))
+list.names <- rep(colnames(st), each = nrow(st))
+df.subset.list <- data.frame(names=list.names, values = list.values)
+qplot(names, values,main = "Serie Temporal 2008- 2018", data=df.subset.list, geom = 'boxplot',fill=I("lightskyblue"), col=I("cornflowerblue") )
